@@ -1,8 +1,13 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Container, Row, Col } from "react-bootstrap";
+import meter1 from '../../assets/img/meter1.svg';
+import meter2 from '../../assets/img/meter2.svg';
+import meter3 from '../../assets/img/meter3.svg';
+import colorSharp from '../../assets/img/color-sharp.png'
 
 function Skills (){
-    const respopnsive = {
+    const responsive = {
         superLargeDesktop: {
             breakpoint : {max: 4000 , min: 3000},
             items: 5
@@ -28,8 +33,43 @@ function Skills (){
     };
 
  return(
-    <section>
-        
+    <section className="skill" id="skill">
+        <Container>
+            <Row>
+                <Col>
+                    <div className="skill-bx">
+                        <h2>
+                            Skills
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br></br> Nulla veniam odio velit beatae voluptatibus in facilis, distinctio cum ducimus quibusdam quas aliquam? Quia possimus aliquam omnis nulla amet eligendi maiores.
+                        </p>
+                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <div className="item">
+                                <img src={meter1} />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} />
+                                <h5>Brand Identify</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3}/>
+                                <h5>Logo Design</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1}/>
+                                <h5>Web Development</h5>
+                            </div>
+                            
+
+                        </Carousel>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+        <img className="background-image-left" src={colorSharp} />
     </section>
  )
 }
+export default Skills

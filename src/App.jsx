@@ -1,7 +1,9 @@
 import './App.css';
-import Main from './Components/NavBar/Banner/Banner';
+
 import Navigation from './Components/NavBar/navBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Skills from './Components/Skills/Skills';
+import Main from './Components/Banner/Banner';
 function App() {
   
 
@@ -9,6 +11,7 @@ function App() {
     <>
       <Navigation/>
       <Main/>
+      <Skills/>
     </>
   )
 }
