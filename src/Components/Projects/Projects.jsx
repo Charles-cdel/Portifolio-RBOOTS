@@ -1,4 +1,4 @@
-import { Container, Row,Col, NavItem, NavLink, Nav } from "react-bootstrap"
+import { Container, Row,Col, NavItem, NavLink, Nav, TabContainer } from "react-bootstrap"
 
 function Projects (){
 
@@ -26,6 +26,7 @@ function Projects (){
                         <h2>
                         Projects</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit modi, earum ut inventore, sit sed harum sunt nostrum expedita soluta ad consectetur doloribus eum mollitia ex, possimus dolore doloremque corrupti.</p>
+                        <Tab.Container id = "projects-tabs" defaultActiveKey= "first">
                         <Nav variant = "pills" defaultActiveKey ="/home" >
                             <Nav.Item>
                                 <Nav.Link eventKey = "first">
@@ -43,6 +44,7 @@ function Projects (){
                                 </Nav.Item>
                             </Nav.Item>
                         </Nav>
+                        </Tab.Container>
                     </Col>
                 </Row>
             </Container>
